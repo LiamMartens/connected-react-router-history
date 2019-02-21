@@ -1,0 +1,44 @@
+{
+  "name": "connected-react-router-history",
+  "author": "Liam Martens <liam@freighter.studio>",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/reducer.js",
+  "module": "esm/reducer.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "build:esm": "BABEL_ENV=esm babel src --out-dir esm --extensions '.ts'",
+    "build:commonjs": "BABEL_ENV=commonjs babel src --out-dir lib --extensions '.ts'",
+    "build": "npm run build:esm & npm run build:commonjs",
+    "postinstall": "npm run build"
+  },
+  "files": [
+    "*.md",
+    "*.js",
+    "*.ts",
+    "esm",
+    "lib"
+  ],
+  "keywords": [
+    "react",
+    "react router",
+    "connected router",
+    "history"
+  ],
+  "license": "ISC",
+  "peerDependencies": {
+    "connected-react-router": "^6.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/redux": "^3.6.0",
+    "@types/history": "^4.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LiamMartens/connected-react-router-history.git"
+  },
+}
