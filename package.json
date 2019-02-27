@@ -1,12 +1,12 @@
 {
   "name": "connected-react-router-history",
   "author": "Liam Martens <liam@freighter.studio>",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "lib/reducer.js",
-  "types": "./lib/reducer.d.ts",
+  "types": "./index.d.ts",
   "scripts": {
-    "prepare": "npm run tsc"
+    "prepare": "./node_modules/.bin/tsc"
   },
   "files": [
     "*.md",

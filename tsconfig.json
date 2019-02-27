@@ -3,9 +3,9 @@
 		"target": "es5",
 		"module": "commonjs",
 		"moduleResolution": "node",
-		"esModuleInterop": true,
+		"esModuleInterop": false,
 		"outDir": "./lib",
-		"declaration": true
+		"declaration": false
 	},
 	"include": [
 		"src"
